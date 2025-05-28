@@ -11,7 +11,7 @@ document.querySelectorAll('.navbar a').forEach(link =>
   })
 );
 
-const birthDate = new Date("1996-02-03"); // ejemplo: 15 de junio de 1995
+const birthDate = new Date("1996-02-03"); 
 
   function calculateAge(birthday) {
     const today = new Date();
@@ -81,7 +81,7 @@ function parseMonthYear(str) {
 }
 
 const skillsBlocks = document.querySelectorAll('.skills_data');
-const rangeStart = new Date(2019, 0); // enero 2018
+const rangeStart = new Date(2019, 0); // enero 2019
 const rangeEnd = new Date(); // hoy
 
 skillsBlocks.forEach(block => {

@@ -233,7 +233,7 @@ span {
 }
 .skills_container{
     display: grid;
-    grid-template-columns: 1fr; /* una sola columna por defecto */
+    grid-template-columns: 1fr;
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -272,7 +272,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Permite que se acomode verticalmente si no cabe */
+    flex-wrap: wrap;
     margin-bottom: 0.5rem;
 }
 .skills_name {
@@ -454,7 +454,7 @@ span {
 .contact_container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
@@ -467,7 +467,7 @@ span {
     color: inherit;
     transition: transform 0.2s;
     width: 100%;
-    max-width: 450px; /* Ajusta si quieres limitar el ancho */
+    max-width: 450px;
 }
 .contact_item:hover {
     transform: scale(1.02);
@@ -692,8 +692,8 @@ span {
     .navbar {
         position: absolute;
         top: 100%;
-        left: 0; /* Asegura que empiece desde el borde izquierdo */
-        width: 100%; /* Ocupa todo el ancho */
+        left: 0;
+        width: 100%;
         background-color: #000000b3;
         padding: 2rem 0;
         text-align: center;
