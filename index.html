@@ -11,6 +11,8 @@
         <script src="https://use.fontawesome.com/0adc4d4ec5.js"></script>
         <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');</style>
 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
         <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
@@ -92,7 +94,7 @@
                 </p>
                 <div class="about_info">
                     <div>
-                        <span class="about_info-title">03+</span>
+                        <span class="about_info-title" id="about_info-title"></span>
                         <span class="about_info-name">Años de<br>Experiencia</span>
                     </div>
                 </div>
@@ -106,8 +108,8 @@
             <h3 class="subtitle_skills">Experiencia adquirida</h3>
 
             <div class="skills_container container grid">
-                <div>
-                    <!--=======SKILSS 1=========-->
+                <div class="skills_contents" id="skillsContainer">
+                <!--=======SKILSS 1=========
                     <div class="skills_content skills_open">
                         <div class="skills_header">
                             <i class="uil uil-brackets-curly skills_icon"></i>
@@ -117,7 +119,7 @@
                             <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
 
-                        <div class="skills_list grid">
+                        <div class="skills_list grid" id="skillsContainerLenguaje">
                             <div class="skills_data">
                                 <div class="skills_titles">
                                     <h3 class="skills_name">HTML</h3>
@@ -128,7 +130,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_html"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -142,7 +144,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_css"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -156,7 +158,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_js"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -170,7 +172,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_c"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -184,7 +186,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_net"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -198,7 +200,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_netFrame"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -212,7 +214,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_iny"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -226,7 +228,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_swa"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -240,20 +242,20 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_jQ"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!--=======SKILSS 2=========-->
+                    =======SKILSS 2=========
                     <div class="skills_content skills_close">
                         <div class="skills_header">
                             <i class="uil uil-database skills_icon"></i>
                             <div>
                                 <h1 class="skills_title">Bases de datos</h1>
                             </div>
-                            <i class="uil uil-angle-down skills_arrow"></i>
+                            <i class="uil uil-angle-down"></i>
                         </div>
 
                         <div class="skills_list grid">
@@ -267,7 +269,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_sql"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -281,7 +283,7 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_mys"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
@@ -295,14 +297,14 @@
                                     </div>
                                 </div>
                                 <div class="skills_bar">
-                                    <span class="skills_percentage skills_oracle"></span>
+                                    <span class="skills_percentage"></span>
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
-                    <!--=======SKILSS 3=========-->
+                    =======SKILSS 3=========
                     <div class="skills_content skills_close">
                         <div class="skills_header">
                             <i class="uil uil-plus-circle skills_icon"></i>
@@ -426,7 +428,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section>
@@ -450,28 +452,8 @@
 
                 <div class="qualification_sections">
                     <!--======= QUALIFICATION CONTENT 1=========-->
-                    <div class="qualification_content" data-content id ="education">
-                        <!--======= QUALIFICATION 1=========-->
-                        <div class="qualification_data left">
-                            <div>
-                                <h3 class="qualification_title">Ingeniería en Sistemas Computacionales</h3>
-                                <span class="qualification_subtitle">Instituto Tecnologico de Mérida</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt qualification_icon"></i>
-                                    Agosto 2016 - Diciembre 2020
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <!--======= QUALIFICATION CONTENT 2=========-->
                     <div class="qualification_content qualification_active" data-content id ="work">
-                        <!--======= QUALIFICATION 1=========-->
+                        <!--======= QUALIFICATION 1
                         <div class="qualification_data left">
                             <div>
                                 <h3 class="qualification_title">Ingeniero de datos</h3>
@@ -488,13 +470,13 @@
                             </div>
                         </div>
                         
-                        <!--======= QUALIFICATION 2=========-->
+                        ======= QUALIFICATION 2=========
                         <div class="qualification_data right">
                             <div></div>
 
                             <div>
                                 <span class="qualification_rounder"></span>
-                                <!--<span class="qualification_line"></span>-->
+                                //<span class="qualification_line"></span>
                             </div>
 
                             <div>
@@ -505,7 +487,27 @@
                                     Septiembre 2020 - Octubre 2021
                                 </div>
                             </div>                            
-                        </div>
+                        </div>=========-->
+                    </div>
+
+                    <!--======= QUALIFICATION CONTENT 2=========-->
+                    <div class="qualification_content" data-content id ="education">
+                        <!--======= QUALIFICATION 1=========
+                        <div class="qualification_data left">
+                            <div>
+                                <h3 class="qualification_title">Ingeniería en Sistemas Computacionales</h3>
+                                <span class="qualification_subtitle">Instituto Tecnologico de Mérida</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt qualification_icon"></i>
+                                    Agosto 2016 - Diciembre 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>  -->                      
                     </div>
                 </div>
             </div>
@@ -515,8 +517,8 @@
         <section class="projects section" id="projects">
             <h2 class="projects_title">Proyectos</h2>
 
-            <div class="projects_container">
-                <!-- Proyecto 1 -->
+            <div class="projects_container" id="projectsContainer">
+                <!-- Proyecto 1 
                 <div class="project_card">
                     <img src="images/CVweb.png" alt="Proyecto 1" class="project_img">
                     <div class="project_info">
@@ -527,7 +529,7 @@
                             tecnologías: HTML, CSS, JavaScrip</p>
                         <a href="https://github.com/VeroMV-24/CVVirtual" target="_blank" class="project_link">Ver en GitHub</a>
                     </div>
-                </div>
+                </div>-->
             </div>
         </section>
 
