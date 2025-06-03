@@ -1,3 +1,15 @@
+fetch('https://cvwebapiveronicamendoza.softstoremx.com/api/Curriculum')
+  .then(response => {
+    if (!response.ok) throw new Error("Error en la respuesta");
+    return response.json(); // Convierte la respuesta a JSON
+  })
+  .then(infoCV => {
+    fillInformation(infoCV);
+  })
+  .catch(error => {
+    console.error('Error al obtener los datos:', error);
+  });
+
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 
@@ -83,6 +95,7 @@ function calculateSkillLevel(startDateStr, endDateStr) {
   return { level, years, formattedDuration };
 }
 
+/*
 var infoCV = {
   nombre:"Verónica de Jesús Mendoza Vidal",
   birthDate: new Date("1996-02-03"),
@@ -230,9 +243,10 @@ var infoCV = {
       link: "https://github.com/VeroMV-24/CVVirtual"
     }
   ]
-};
+};*/
 
-function calculateAge(birthday) {
+function calculateAge(birthdate) {
+    const birthday = new Date(birthdate);
     const today = new Date();
     let age = today.getFullYear() - birthday.getFullYear();
     const m = today.getMonth() - birthday.getMonth();
@@ -332,10 +346,10 @@ function fillQualifications(sectionId, dataQualification){
   });
 }
 
-function fillInformation(){
+function fillInformation(infoCV){
 
   const spnAge = document.getElementById("age");
-  spnAge.innerText = calculateAge(infoCV.birthDate);
+  spnAge.innerText = calculateAge(infoCV.birthdate);
 
   const yearsExperience = calculateYearsExperience(infoCV.work);
   document.querySelector(".about_info-title").textContent = `${yearsExperience}`;
@@ -363,7 +377,7 @@ function fillInformation(){
   fillQualifications("education", infoCV.education);
 
   const container_projects = document.getElementById("projectsContainer");
-  infoCV.projects.forEach(project => {
+  infoCV.project.forEach(project => {
     const card_projects = document.createElement("div");
     card_projects.classList.add("project_card");
 
@@ -380,4 +394,4 @@ function fillInformation(){
   
 }
 
-fillInformation();
+/*fillInformation();*/
